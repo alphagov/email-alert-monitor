@@ -11,3 +11,7 @@ gem 'therubyracer',  platforms: :ruby
 gem 'jquery-rails'
 
 gem 'unicorn'
+
+group :development, :test do
+  gem 'rspec-rails', '3.1.0'
+end
