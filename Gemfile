@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.8'
 gem 'pg', '0.17.1'
 
+gem 'plek', '1.9.0'
+gem 'airbrake', '4.1.0'
+
 gem 'sass-rails', '4.0.5'
 gem 'uglifier', '2.6.0'
 gem 'therubyracer',  platforms: :ruby
