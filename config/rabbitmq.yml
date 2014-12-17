@@ -1,0 +1,21 @@
+connection: &connection
+  hosts:
+    - localhost
+  port: 5672
+  vhost: /
+  user: content_register
+  pass: content_register
+  recover_from_connection_close: true
+
+development:
+  connection:
+    <<: *connection
+  exchange: published_documents
+  queue: content_register
+
+test:
+  connection:
+    <<: *connection
+    user: content_register_test
+  exchange: content_register_published_documents_test_exchange
+  queue: content_register_test
